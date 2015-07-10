@@ -169,7 +169,7 @@ public class MySQLTools {
 
 	public static void exampleTest() {
 		String beanNameString = "com.hansonboy.javaBean.Person";
-		String filePathString = "G:\\NetDevForWin\\workplace\\iOS_HttpServer_MySQL_Tomcat_JSON\\persons.txt";
+		String filePathString = "G:\\NetDevForWin\\workplace\\iOS_Dev_GitHub\\iOS_CS_APP\\iOS_HttpServer_MySQL_Tomcat_JSON\\persons.txt";
 		MySQLTools.getSingletonMySQLTools().executeUpdateSQLString(
 				Bean2SqlTools.genDropTableSql(beanNameString));
 		MySQLTools.getSingletonMySQLTools().executeUpdateSQLString(
