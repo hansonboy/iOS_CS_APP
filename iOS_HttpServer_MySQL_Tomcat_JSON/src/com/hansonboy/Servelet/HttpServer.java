@@ -16,6 +16,7 @@ import com.hansonboy.MySQL.Bean2SqlTools;
 import com.hansonboy.MySQL.MySQLTools;
 import com.hansonboy.MySQL.Sql2BeanTools;
 import com.hansonboy.Utils.StringUtil;
+import com.hansonboy.javaBean.Person;
 
 
 /**
@@ -41,7 +42,19 @@ public class HttpServer extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+		String beanString = "com.hansonboy.javaBean.Person";
+		String idString = request.getParameter("id");
+		try {
+			Person person = (Person)Sql2BeanTools.genBean_From_Sql_Id(beanString, Integer.parseInt(idString));	
+			response.getWriter().println("I come from Server"); 
+			response.getWriter().print(JSONTools.createJSONString(idString, person));
+		} catch (Exception e) {
+			// TODO: handle exception
+		System.out.println("HttpServer.doGet()");
+		response.setContentType("text/html;charset=utf-8");
+		response.sendError(400, "id参数不得为空");
+		e.printStackTrace();
+		}
 	}
 
 	/**
