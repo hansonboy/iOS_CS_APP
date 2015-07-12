@@ -13,7 +13,6 @@
 @property (strong,nonatomic) UILabel * helloworld;
 @property (strong,nonatomic) UIButton * sendButton;
 @end
-
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -33,7 +32,7 @@
     
     self.helloworld = [[UILabel alloc]initWithFrame:CGRectMake(10, NextYFor(self.sendButton), 320, 40)];
     self.helloworld.textAlignment = NSTextAlignmentCenter;
-    self.helloworld.text = @"我将显示服务器数据";
+    self.helloworld.text = @"我将显示d服务器数据";
     [self.view addSubview:self.helloworld];
     
 }
