@@ -37,7 +37,7 @@
     
 }
 -(void)sendHttps:(UIButton*)sender{
-    NSString * urlStr = @"http://113.54.158.230:8080/iOS_HttpServer_MySQL_Tomcat_JSON/HttpServer";
+    NSString * urlStr = @"http://192.168.1.109:8080/iOS_HttpServer_MySQL_Tomcat_JSON/HttpServer?id=1001";
     NSURL * url = [NSURL URLWithString:urlStr];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
