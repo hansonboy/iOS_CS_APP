@@ -53,6 +53,18 @@
         
 //        inserting objects into the database
         Person * person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:context];
+        // update by kvc or property
+        [person setValue:@"wangjiaweni" forKey:@"name"];
+        person.name = @"wangjiawnei";
+        //Delete
+        [self.document.managedObjectContext deleteObject:person];
+//      Querying
+        NSFetchRequest * request = [NSFetchRequest fetchRequestWithEntityName:@"Person"];
+        request.fetchBatchSize = 20;
+        request.fetchLimit = 100;
+        NSSortDescriptor * sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedStandardCompare:)];
+        request.sortDescriptors = @[sortDescriptor];
+        request.predicate;
         
     }
 }
