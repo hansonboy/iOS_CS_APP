@@ -54,11 +54,6 @@
     NSLog(@"id = %@,name = %@,age = %@",[resultJson objectForKey:@"id"],[resultJson objectForKey:@"name"],[resultJson objectForKey:@"age"]);
     
     NSDictionary * dic = [NSDictionary dictionaryWithObjectsAndKeys:@"1001",@"id",@"wangjiawnei",@"name",nil];
-//    if([NSJSONSerialization isValidJSONObject:dic]){
-//        NSError *error;
-//        NSData * resultData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&error];
-//        NSLog(@"Json data:%@",[[NSString alloc]initWithData:resultData encoding:NSUTF8StringEncoding]);
-//    }
     NSString *jsonString = [self jsonString:[self JSONData:dic]];
     NSLog(@"jsonString:%@",jsonString);
     NSLog(@"jsonObject:%@",[self JSONObject:[self jsonData:jsonString]]);

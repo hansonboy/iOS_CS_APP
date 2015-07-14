@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743C46661B54E72E007E1DBA /* CoreDataDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C46651B54E72E007E1DBA /* CoreDataDemo.m */; };
+		743C46691B550721007E1DBA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 743C46671B550721007E1DBA /* Model.xcdatamodeld */; };
+		743C466F1B550940007E1DBA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C466E1B550940007E1DBA /* Person.m */; };
+		743C46731B550A9A007E1DBA /* Person+AddOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C46721B550A9A007E1DBA /* Person+AddOn.m */; };
 		74472A321B5288C10044F390 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74472A311B5288C10044F390 /* main.m */; };
 		74472A351B5288C10044F390 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74472A341B5288C10044F390 /* AppDelegate.m */; };
 		74472A381B5288C10044F390 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74472A371B5288C10044F390 /* ViewController.m */; };
@@ -27,6 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		743C46641B54E72E007E1DBA /* CoreDataDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataDemo.h; path = Model/CoreDataDemo.h; sourceTree = "<group>"; };
+		743C46651B54E72E007E1DBA /* CoreDataDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataDemo.m; path = Model/CoreDataDemo.m; sourceTree = "<group>"; };
+		743C46681B550721007E1DBA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		743C466D1B550940007E1DBA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		743C466E1B550940007E1DBA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		743C46711B550A9A007E1DBA /* Person+AddOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Person+AddOn.h"; path = "Model/Person+AddOn.h"; sourceTree = "<group>"; };
+		743C46721B550A9A007E1DBA /* Person+AddOn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Person+AddOn.m"; path = "Model/Person+AddOn.m"; sourceTree = "<group>"; };
 		74472A2C1B5288C10044F390 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74472A301B5288C10044F390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74472A311B5288C10044F390 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +71,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		743C46701B55095E007E1DBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				743C46641B54E72E007E1DBA /* CoreDataDemo.h */,
+				743C46651B54E72E007E1DBA /* CoreDataDemo.m */,
+				743C466D1B550940007E1DBA /* Person.h */,
+				743C466E1B550940007E1DBA /* Person.m */,
+				743C46671B550721007E1DBA /* Model.xcdatamodeld */,
+				743C46711B550A9A007E1DBA /* Person+AddOn.h */,
+				743C46721B550A9A007E1DBA /* Person+AddOn.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		74472A231B5288C10044F390 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,7 @@
 		74472A2E1B5288C10044F390 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				743C46701B55095E007E1DBA /* Model */,
 				74472A331B5288C10044F390 /* AppDelegate.h */,
 				74472A341B5288C10044F390 /* AppDelegate.m */,
 				74472A361B5288C10044F390 /* ViewController.h */,
@@ -220,6 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				74472A381B5288C10044F390 /* ViewController.m in Sources */,
+				743C466F1B550940007E1DBA /* Person.m in Sources */,
+				743C46731B550A9A007E1DBA /* Person+AddOn.m in Sources */,
+				743C46661B54E72E007E1DBA /* CoreDataDemo.m in Sources */,
+				743C46691B550721007E1DBA /* Model.xcdatamodeld in Sources */,
 				74472A351B5288C10044F390 /* AppDelegate.m in Sources */,
 				74472A321B5288C10044F390 /* main.m in Sources */,
 			);
@@ -416,6 +446,7 @@
 				74472A511B5288C10044F390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74472A521B5288C10044F390 /* Build configuration list for PBXNativeTarget "ClientTests" */ = {
 			isa = XCConfigurationList;
@@ -424,8 +455,22 @@
 				74472A541B5288C10044F390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		743C46671B550721007E1DBA /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				743C46681B550721007E1DBA /* Model.xcdatamodel */,
+			);
+			currentVersion = 743C46681B550721007E1DBA /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 74472A241B5288C10044F390 /* Project object */;
 }
