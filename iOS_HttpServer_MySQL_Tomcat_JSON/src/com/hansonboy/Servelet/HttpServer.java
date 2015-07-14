@@ -47,7 +47,7 @@ public class HttpServer extends HttpServlet {
 		try {
 			Person person = (Person)Sql2BeanTools.genBean_From_Sql_Id(beanString, Integer.parseInt(idString));	
 //			response.getWriter().println("I come from Server"); 
-			response.getWriter().print(JSONTools.createJSONString(idString, person));
+			response.getWriter().print(JSONTools.createJSONString("Person", person));
 		} catch (Exception e) {
 			// TODO: handle exception
 		System.out.println("HttpServer.doGet()");
