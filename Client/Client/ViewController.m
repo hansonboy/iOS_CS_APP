@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CoreDataTools.h"
 #define ScreenBounds ([UIScreen mainScreen].bounds)
 #define NextYFor(a)   (a.frame.origin.y+a.frame.size.height+10)
 @interface ViewController ()
@@ -34,6 +35,7 @@
     self.helloworld.textAlignment = NSTextAlignmentCenter;
     self.helloworld.text = @"我将显示d服务器数据";
     [self.view addSubview:self.helloworld];
+    [CoreDataTools exampleTest];
     
 }
 -(void)sendHttps:(UIButton*)sender{

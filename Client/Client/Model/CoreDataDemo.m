@@ -11,34 +11,29 @@
 #import <CoreData/CoreData.h>
 #import "Person.h"
 @implementation CoreDataDemo
--(void)createUIManagedDocument{
+-(void)openDocument:(UIManagedDocument *)document withCompletionHandler:(void(^)(BOOL success))completionHandler{
     //create UIMangedDoucment
     NSFileManager * fileManager = [NSFileManager defaultManager];
     NSURL * documentsDirectory = [[fileManager URLsForDirectory:NSDocumentationDirectory inDomains:NSUserDomainMask]firstObject];
     NSString * documentName = @"MyDocument";
     NSURL * url = [documentsDirectory URLByAppendingPathComponent:documentName];
-    self.document = [[UIManagedDocument alloc]initWithFileURL:url];
+    document = [[UIManagedDocument alloc]initWithFileURL:url];
     //open or create UImangedDocument
     BOOL fileExists = [[NSFileManager defaultManager]fileExistsAtPath:[url path]];
     if (fileExists) {
-        [self.document openWithCompletionHandler:^(BOOL success) {
-//           block to execute when open
-            if (success) {
-                [self documentIsReady];
-            }else NSLog(@"Couldn't open document at %@",url);
-        }];
+        [document openWithCompletionHandler:^(BOOL success) {
+            completionHandler(success); }];
     }else{
-        [self.document saveToURL:url forSaveOperation:UIDocumentSaveForCreating completionHandler:^(BOOL success) {
-// block to execute when create is done
-            if (success) {
-                [self documentIsReady];
-            }else NSLog(@"couldn't open document at %@",url);
+        [document saveToURL:url forSaveOperation:UIDocumentSaveForCreating completionHandler:^(BOOL success) {
+            // block to execute when create is done
+            completionHandler(success);
         }];
     }
+}
+-(void)saveAndCloseDocument{
 //   saving the document
     [self.document saveToURL:self.document.fileURL forSaveOperation:UIDocumentSaveForOverwriting completionHandler:^(BOOL success) {
 //        block to execute when save is done
-        
     }];
 //    closing the document
     [self.document closeWithCompletionHandler:^(BOOL success) {
@@ -64,7 +59,15 @@
         request.fetchLimit = 100;
         NSSortDescriptor * sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedStandardCompare:)];
         request.sortDescriptors = @[sortDescriptor];
-        request.predicate;
+        
+        NSPredicate * predicate1 = [NSPredicate predicateWithFormat:@"id1 = %@",@1100];
+        NSPredicate * predicate2 = [NSPredicate predicateWithFormat:@"name = %@",@"wangjianwei"];
+        NSPredicate * predicate3= [NSCompoundPredicate andPredicateWithSubpredicates:@[predicate1,predicate2]];
+        NSPredicate * predicate4 = [NSPredicate predicateWithFormat:@"(id1 = %@)AND(name = %@)",@1001,@"wangjianwei"];
+        request.predicate = predicate4;
+        NSError * error;
+        NSArray * persons = [context executeFetchRequest:request error:&error];
+        
         
     }
 }

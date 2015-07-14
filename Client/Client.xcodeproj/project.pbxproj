@@ -18,6 +18,7 @@
 		74472A3D1B5288C10044F390 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74472A3C1B5288C10044F390 /* Images.xcassets */; };
 		74472A401B5288C10044F390 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74472A3E1B5288C10044F390 /* LaunchScreen.xib */; };
 		74472A4C1B5288C10044F390 /* ClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74472A4B1B5288C10044F390 /* ClientTests.m */; };
+		74634A0E1B55349C00B366BE /* CoreDataTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 74634A0D1B55349C00B366BE /* CoreDataTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		74472A451B5288C10044F390 /* ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74472A4A1B5288C10044F390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74472A4B1B5288C10044F390 /* ClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClientTests.m; sourceTree = "<group>"; };
+		74634A0C1B55349C00B366BE /* CoreDataTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataTools.h; path = Model/CoreDataTools.h; sourceTree = "<group>"; };
+		74634A0D1B55349C00B366BE /* CoreDataTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataTools.m; path = Model/CoreDataTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				743C46671B550721007E1DBA /* Model.xcdatamodeld */,
 				743C46711B550A9A007E1DBA /* Person+AddOn.h */,
 				743C46721B550A9A007E1DBA /* Person+AddOn.m */,
+				74634A0C1B55349C00B366BE /* CoreDataTools.h */,
+				74634A0D1B55349C00B366BE /* CoreDataTools.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				743C46661B54E72E007E1DBA /* CoreDataDemo.m in Sources */,
 				743C46691B550721007E1DBA /* Model.xcdatamodeld in Sources */,
 				74472A351B5288C10044F390 /* AppDelegate.m in Sources */,
+				74634A0E1B55349C00B366BE /* CoreDataTools.m in Sources */,
 				74472A321B5288C10044F390 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
