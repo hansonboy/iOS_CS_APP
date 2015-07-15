@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		743C46661B54E72E007E1DBA /* CoreDataDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C46651B54E72E007E1DBA /* CoreDataDemo.m */; };
 		743C46691B550721007E1DBA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 743C46671B550721007E1DBA /* Model.xcdatamodeld */; };
 		743C466F1B550940007E1DBA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C466E1B550940007E1DBA /* Person.m */; };
 		743C46731B550A9A007E1DBA /* Person+AddOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C46721B550A9A007E1DBA /* Person+AddOn.m */; };
@@ -32,8 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		743C46641B54E72E007E1DBA /* CoreDataDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataDemo.h; path = Model/CoreDataDemo.h; sourceTree = "<group>"; };
-		743C46651B54E72E007E1DBA /* CoreDataDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataDemo.m; path = Model/CoreDataDemo.m; sourceTree = "<group>"; };
 		743C46681B550721007E1DBA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		743C466D1B550940007E1DBA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		743C466E1B550940007E1DBA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
@@ -77,8 +74,6 @@
 		743C46701B55095E007E1DBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				743C46641B54E72E007E1DBA /* CoreDataDemo.h */,
-				743C46651B54E72E007E1DBA /* CoreDataDemo.m */,
 				743C466D1B550940007E1DBA /* Person.h */,
 				743C466E1B550940007E1DBA /* Person.m */,
 				743C46671B550721007E1DBA /* Model.xcdatamodeld */,
@@ -253,7 +248,6 @@
 				74472A381B5288C10044F390 /* ViewController.m in Sources */,
 				743C466F1B550940007E1DBA /* Person.m in Sources */,
 				743C46731B550A9A007E1DBA /* Person+AddOn.m in Sources */,
-				743C46661B54E72E007E1DBA /* CoreDataDemo.m in Sources */,
 				743C46691B550721007E1DBA /* Model.xcdatamodeld in Sources */,
 				74472A351B5288C10044F390 /* AppDelegate.m in Sources */,
 				74634A0E1B55349C00B366BE /* CoreDataTools.m in Sources */,

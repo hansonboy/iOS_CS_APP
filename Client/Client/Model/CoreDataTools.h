@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import <CoreData/CoreData.h>
 @interface CoreDataTools : NSObject
 @property (strong,nonatomic) UIManagedDocument * document;
 +(CoreDataTools*)sharedCoreDataTools;
