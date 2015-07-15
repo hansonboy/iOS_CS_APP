@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		743C46691B550721007E1DBA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 743C46671B550721007E1DBA /* Model.xcdatamodeld */; };
 		743C466F1B550940007E1DBA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C466E1B550940007E1DBA /* Person.m */; };
-		743C46731B550A9A007E1DBA /* Person+AddOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C46721B550A9A007E1DBA /* Person+AddOn.m */; };
 		74472A321B5288C10044F390 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74472A311B5288C10044F390 /* main.m */; };
 		74472A351B5288C10044F390 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74472A341B5288C10044F390 /* AppDelegate.m */; };
 		74472A381B5288C10044F390 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74472A371B5288C10044F390 /* ViewController.m */; };
@@ -34,8 +33,6 @@
 		743C46681B550721007E1DBA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		743C466D1B550940007E1DBA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		743C466E1B550940007E1DBA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		743C46711B550A9A007E1DBA /* Person+AddOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Person+AddOn.h"; path = "Model/Person+AddOn.h"; sourceTree = "<group>"; };
-		743C46721B550A9A007E1DBA /* Person+AddOn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Person+AddOn.m"; path = "Model/Person+AddOn.m"; sourceTree = "<group>"; };
 		74472A2C1B5288C10044F390 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74472A301B5288C10044F390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74472A311B5288C10044F390 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,8 +74,6 @@
 				743C466D1B550940007E1DBA /* Person.h */,
 				743C466E1B550940007E1DBA /* Person.m */,
 				743C46671B550721007E1DBA /* Model.xcdatamodeld */,
-				743C46711B550A9A007E1DBA /* Person+AddOn.h */,
-				743C46721B550A9A007E1DBA /* Person+AddOn.m */,
 				74634A0C1B55349C00B366BE /* CoreDataTools.h */,
 				74634A0D1B55349C00B366BE /* CoreDataTools.m */,
 			);
@@ -247,7 +242,6 @@
 			files = (
 				74472A381B5288C10044F390 /* ViewController.m in Sources */,
 				743C466F1B550940007E1DBA /* Person.m in Sources */,
-				743C46731B550A9A007E1DBA /* Person+AddOn.m in Sources */,
 				743C46691B550721007E1DBA /* Model.xcdatamodeld in Sources */,
 				74472A351B5288C10044F390 /* AppDelegate.m in Sources */,
 				74634A0E1B55349C00B366BE /* CoreDataTools.m in Sources */,
